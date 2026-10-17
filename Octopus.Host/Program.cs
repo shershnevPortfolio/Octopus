@@ -1,8 +1,19 @@
+using Octopus.DataSet;
+using Octopus.Execution;
+using Octopus.Pipeline;
+using Octopus.Source;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services
+    .AddDataSetModule()
+    .AddPipelineModule()
+    .AddExecutionModule()
+    .AddSourceModule();
 
 var app = builder.Build();
 
