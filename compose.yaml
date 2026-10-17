@@ -1,0 +1,7 @@
+﻿services:
+  octopus:
+    image: octopus
+    build:
+      context: .
+      dockerfile: Octopus/Dockerfile
+
