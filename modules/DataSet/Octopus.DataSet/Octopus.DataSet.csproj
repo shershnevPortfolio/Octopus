@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Octopus.DataSet.Contract\Octopus.DataSet.Contract.csproj" />
+    <ProjectReference Include="..\..\..\Octopus.SharedKernel\Octopus.SharedKernel.csproj" />
   </ItemGroup>
 
   <ItemGroup>
